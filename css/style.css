@@ -1,0 +1,213 @@
+body{
+    font-family: Nunito, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+h1, h2, h3{
+    font-family: asap, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.botao{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 0);
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*navegação*/
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black
+
+}
+
+nav > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: yellowtail, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+/*cabeçalho*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://res.cloudinary.com/jnto/image/upload/w_750,h_503,fl_lossy,f_auto/v1531981666/fujiguide/SG010_6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: rgb(112, 112, 112);
+    color: white;
+}
+
+#sobre h2{
+    color: white;
+}
+
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#sobre .botao{
+    background-color: gray;
+    color: rgb(63, 61, 61);
+}
+
+/*serviços*/
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*fotos*/
+
+
+/*contato*/
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato h2{
+    color: black;
+}
+
+/*rodapé*/
+
+footer{
+   text-align: center;
+   padding: 10px;
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+@media screen and (min-width: 768px) {
+    /*nav*/
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 120px;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+
+/*sobre*/
+
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+/*serviços*/
+
+    #serviços {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #serviços h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+/*contato*/
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p{
+        width: 100%;
+    }
+}

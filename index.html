@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AxieTec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Nunito:wght@700&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  
+    <nav>
+        <a href="#"><img src="https://im3.ezgif.com/tmp/ezgif-3-3ebb3378c57a.png"></a>
+        <ul>
+            <li><a href="#sobre">Home</a></li>
+            <li><a href="#serviços">Notícias</a></li>
+            <li><a href="#fotos">Recomendações</a></li> 
+            <li><a href="https://www.whatsapp.com/?lang=pt_br"><img src="https://im3.ezgif.com/tmp/ezgif-3-bd4db22686c9.png"/></a></li> 
+        </ul>
+    </nav>
+    
+   
+
+    <section id="sobre">
+        <h2>TECNOLOGIA</h2>
+        <p> Videogames
+        </p>  
+    </section>
+    <section id="serviços">
+        <h2>Evolução no mercado dos games</h2>
+
+        <div>
+
+            <img src="https://im3.ezgif.com/tmp/ezgif-3-798b3bb8aebf.jpg">
+            <h3>Impacto da pandemia</h3>
+            <p>Em meio à pandemia e ao isolamento social trazido por ela, muita gente precisou encontrar formas alternativas de entretenimento e diversão dentro de casa. Uma das principais saídas usadas pelos brasileiros foram os jogos eletrônicos. Prova disso é que as transações financeiras feitas nas principais plataformas e consoles de jogo cresceram 140% em 2020 ante 2019, segundo um estudo feito pela bandeira de cartões Visa.
+            </p>
+
+        </div>
+
+        <div>
+
+            <img src="https://im3.ezgif.com/tmp/ezgif-3-4efa8799092b.jpg">
+            <h3>Aumento na venda de periféricos</h3>
+            <p>A venda de chamados "periféricos gamers" também cresceu no ano passado. Segundo a HyperX, que produz equipamentos como teclado, mouse, mousepad, headset, a alta nas vendas foi de 50% no Brasil e de 107% na América Latina.
+            </p>
+
+        </div>
+
+        <div>
+
+            <img src="https://portalderondonia.com.br/wp-content/uploads/2020/11/1-5.jpg">
+            <h3>Jogos Mobile</h3>
+            <p>Os jogos para celular também ganharam espaço em 2020. Se antes os chamados "gamers" (nome dado às pessoas que jogam com frequência) se concentravam nos videogames e computadores, agora eles também passaram a usar o celular, especialmente com a popularização de jogos como o Free Fire. A desenvolvedora de games Etermax teve, em 2020, um crescimento de 120% em usuários ativos diários, 25% acima da previsão original.  
+            </p>
+
+        </div>
+    </section>      
+
+
+    
+    <section id="contato">
+        <h2>Receba as notícias em primeira mão!</h2>
+        <p>Entre na nossa lista de transmissão inserindo seu nome e e-mail nos campos abaixo.</p>
+
+        <form name="formCadastro" onsubmit="return validarFormulario()" method="post">
+            <input type="text" name="nome" placeholder="Digite seu nome aqui"><br>
+            <input type="e-mail" name="email" placeholder="Digite seu e-mail"><br>
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+        
+        <script>
+        function validarFormulario(){
+            var nomePessoa = document.forms["formCadastro"]["email"].value;
+            if (nomePessoa == "") {
+                alert("Digite um e-mail válido.");
+                return false;     
+            }
+            else{
+                alert("Agora você ficará bem informado!");
+                return true;
+            }
+        }
+    </script>
+    </section>
+
+    <footer>
+        <a href="#topo">Voltar</a>
+        <p>Direitos reservados © AxieTec Ltda</p>
+
+    </footer>
+    <div>
+    <input type="button" value="Exibir Alert" />
+</div>
+</body>
+</html>
